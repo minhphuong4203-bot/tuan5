@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #right {
+            width: 440px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        #center {
+            display: flex;
+            flex-direction: column;
+            width: 910px;
+            background-color: bisque;
+        }
+        
+        .center-row1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .center-row1-item1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .center-row1-item2 {
+            border: solid red 0.5px;
+            font-size: 15px;
+            font-weight: bold;
+            height: 40px;
+            width: 90px;
+            text-align: center;
+            border-radius: 30px;
+            color: red;
+        }
+        
+        .center-row1-item2 p {
+            margin: 13px;
+        }
+        
+        .center-row1 span {
+            margin: 15px;
+        }
+        
+        .center-row1 img {
+            width: 15px;
+            height: 15px;
+        }
+        
+        .center-row1 .img-user {
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="./picture/logo.png" alt="">
+                    <img class="item" src="./picture/home.png" alt="">
+                    <img class="item" src="./picture/cam.png" alt="">
+                    <img class="item" src="./picture/chatting.png" alt="">
+                    <img class="item" src="./picture/user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="./picture/avatar.png" width="44" alt="">
+                    <img id="setting" src="./picture/setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">center
+                <div class="center-row1">
+                    <div class="center-row1-item1">
+                        <p>Meeting title</p>
+                    </div>
+                    <div class="center-row1-item2">
+                        <p>&#8226; 12:00</p>
+                    </div>
+                </div>
+
+                <div class="center-row1">
+                    <div>
+                        <p class="img-user"><img src="./picture/user.png" alt=""> Internal </p>
+                    </div>
+
+                    <div>
+                        <p><img src="./picture/calender.png" alt=""> Sep 02, 2022</p>
+                    </div>
+
+                    <div>
+                        <span>|</span>
+                        <span>08:00-09:00 Am</span>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <div><img style="height: 300px; width: 500px;" src="./picture/img_big.png" alt="">
+                        <div>
+                            <div>
+                                <p>&#8226; Benjamin Crawford</p>
+                            </div>
+                            <div><img src="./picture/mic_color.png" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <div><img src="./picture/img2.png" alt=""></div>
+                    <div><img src="./picture/img1.png" alt=""></div>
+                    <div><img src="./picture/img.png" alt=""></div>
+                </div>
+
+                <div>
+                    <div><img src="./picture/mic_grey_color.png" alt=""></div>
+                    <div><img src="./picture/cam_color.png" alt=""></div>
+                    <div><img src="./picture/speaker_grey_color.png" alt=""></div>
+                    <div>
+                        <p>End meeting</p>
+                    </div>
+                    <div><img src="./picture/Button 2179.png" alt=""></div>
+                    <div><img src="./picture/share.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="right">right</div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
