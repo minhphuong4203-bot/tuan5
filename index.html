@@ -20,7 +20,9 @@
         
         #right {
             width: 440px;
-            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         #left {
@@ -58,9 +60,6 @@
             display: flex;
             flex-direction: column;
             width: 910px;
-            background-color: bisque;
-            /* justify-content: center;
-            align-items: center; */
             align-items: center;
         }
         
@@ -70,6 +69,7 @@
             justify-content: space-between;
             align-items: center;
             width: 90%;
+            margin-top: 20px;
         }
         
         .center-row1-item1 {
@@ -132,8 +132,6 @@
             border-radius: 40px;
             margin-right: 15px;
             color: aliceblue;
-            /* padding: auto;
-            margin: auto; */
         }
 
         .center-row2-item1 p{
@@ -255,6 +253,221 @@
             margin: 0;
         }
 
+        .right-top{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 40%;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .right-top-row1{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 105px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-top-left span{
+            font-size: 25px;
+            margin: auto;
+        }        
+
+        .right-top-item1-number{
+            padding: 8px;
+            background-color: rgba(241,165,184,0.2);
+            border-radius: 200px;
+            color: #e97391;
+
+        }
+
+        .right-top-item2{
+            display: flex;
+            justify-content: end;
+            width: 180px;
+            font-size: 15px;
+        }
+
+        .right-top-item2-text{
+            width: 70px;
+            height: 40px;
+            border: solid 1px #e34e74;
+            position: relative;
+            text-align: center;
+            border-radius: 5px;
+            color: #e34e74;
+        }
+
+        .right-top-item2-text p{
+            margin: 10px;
+            padding-left: 5px;
+            position: absolute;
+        }
+
+        .right-top-row2{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            flex-direction: column;
+        }
+
+        .right-top-row2-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-top-row2-left{
+            display: flex;
+            align-items: center;
+        }
+
+        .right-top-row2-left span{
+            margin-right: 5px;
+        }
+
+        .right-top-row2-right{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100px;
+        }
+
+        .right-top-row2-right img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .right-bot{
+            display: flex;
+            width: 90%;
+            flex-direction: column; 
+            border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+        }
+
+        .right-bot-row1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .right-bot-row2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-bot-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        .right-bot-row1-item1-img{
+            display: flex;
+            align-items: center;
+        }
+
+        .right-bot-row1-item1-img span{
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .right-bot-row1-item1-txt{
+            display: flex;
+            justify-content: end;
+        }
+
+        .right-bot-row1-item1-txtsub{
+            display: flex;
+            justify-content: end;
+            width: 87%;
+            font-size: 17px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .right-bot-row1-item1-txtsub p{
+            padding-left: 10px;
+        }
+
+        .right-bot-row1-item1-cmtIcon{
+            margin-left: 50px;
+        }
+
+        .right-bot-row1-item1-cmtIconSub{
+            width: 100px;
+            height: 50px;
+            background-color: rgba(214, 56, 159,0.1);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .right-bot-row1-item1-cmtIconSub p{
+            position: absolute;
+            margin-left: 16px;
+        }
+
+        .right-bot-row1-item1-cmtIconSub img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .right-bot-row1-item1-input{
+            display: flex;
+            width: 100%;
+        }
+
+        .right-bot-row1-item1-btnSend{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .right-bot-row1-item1-input{
+            display: flex;
+            width: 85%;
+            height: 100%;
+            background-color: rgba(134, 129, 129, 0.1); 
+            align-items: center;  
+            justify-content: space-between;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .btn{
+            display: flex;
+            width: 40%;
+            height: 100%;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .btnAdd{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 100%;
+            padding: 0 13px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .btnInput{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 100%;
+            padding: 0 20px;
+        }
+
     </style>
 </head>
 
@@ -275,7 +488,7 @@
                     <img id="setting" src="./picture/setting.png" width="44" alt="">
                 </div>
             </div>
-            <div id="center">center
+            <div id="center">
                 <div class="center-row1">
                     <div class="center-row1-item1">
                         <p>Meeting title</p>
@@ -331,7 +544,7 @@
                                 <span style="color: #1dd75b;">&#8226;</span>
                                 <span>Christian Scott</span>
                             </div>
-                            <div class="content-img"><img src="./picture/mic_grey_color.png" alt=""></div>
+                            <div class="content-img"><img src="./picture/mic2.png" alt=""></div>
                         </div>
                     </div>
 
@@ -359,7 +572,142 @@
 
             </div>
 
-            <div id="right">right</div>
+            <div id="right">
+                <div class="right-top">
+                    <div class="right-top-row1">
+                        <div class="right-top-left">
+                            <span style="font-weight: bold">Participants</span> 
+                            <span class="right-top-item1-number" style="font-size: 15px;">4</span>
+                        </div> 
+                        <div class="right-top-item2">
+                            <div class="right-top-item2-text"><p> &#43;  Add</p> </div>
+                        </div>
+                    </div>
+
+                    <div class="right-top-row2">
+                        <div class="right-top-row2-container">
+                            <div class="right-top-row2-left">
+                                <span><img src="./picture/avatar 1322.png" alt=""></span>
+                                <span>Benjamin Crawford</span>
+                            </div>
+                            <div class="right-top-row2-right">
+                                <div><img src="./picture/mic1.png" alt=""></div>
+                                <div><img src="./picture/cam_small.png" alt=""></div>
+                                <div><img src="./picture/more.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-top-row2">
+                        <div class="right-top-row2-container">
+                            <div class="right-top-row2-left">
+                                <span><img src="./picture/avatar 1323.png" alt=""></span>
+                                <span>Benjamin Crawford</span>
+                            </div>
+                            <div class="right-top-row2-right">
+                                <div><img src="./picture/mic1.png" alt=""></div>
+                                <div><img src="./picture/cam_small.png" alt=""></div>
+                                <div><img src="./picture/more.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-top-row2">
+                        <div class="right-top-row2-container">
+                            <div class="right-top-row2-left">
+                                <span><img src="./picture/avatar 1326.png" alt=""></span>
+                                <span>Benjamin Crawford</span>
+                            </div>
+                            <div class="right-top-row2-right">
+                                <div><img src="./picture/mic2.png" alt=""></div>
+                                <div><img src="./picture/cam_small.png" alt=""></div>
+                                <div><img src="./picture/more.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-top-row2">
+                        <div class="right-top-row2-container">
+                            <div class="right-top-row2-left">
+                                <span><img src="./picture/avatar 1325.png" alt=""></span>
+                                <span>Benjamin Crawford</span>
+                            </div>
+                            <div class="right-top-row2-right">
+                                <div><img src="./picture/mic1.png" alt=""></div>
+                                <div><img src="./picture/cam_small.png  " alt=""></div>
+                                <div><img src="./picture/more.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-bot">
+                    <div class="right-bot-row1"><p>Chat</p></div>
+
+                    <div class="right-bot-row2">
+                        <div class="right-bot-container">
+                            <div class="right-bot-row1-item1-img">
+                                <span><img src="./picture/avatar 1326.png" alt=""></span>
+                                <span>Deborah Chu</span>
+                                <span style="font-size: 10px; color: rgba(0, 0, 0, 0.5);">1:12 PM</span>
+                            </div>
+                            <div class="right-bot-row1-item1-txt">
+                                <div class="right-bot-row1-item1-txtsub">
+                                    <p>Lorem exceptteur magna voluptate exercication dolore exercitation amet</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-bot-container">
+                            <div class="right-bot-row1-item1-img">
+                                <span><img src="./picture/avatar 1327.png" alt=""></span>
+                                <span>Jordan Nieves</span>
+                                <span style="font-size: 10px; color: rgba(0, 0, 0, 0.5);">1:12 PM</span>
+                            </div>
+                            <div class="right-bot-row1-item1-txt">
+                                <div class="right-bot-row1-item1-txtsub">
+                                    <p>Eiusmod laborum cuipa est magna cilum sint in elit proident magna anim cosecte</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-bot-container">
+                            <div class="right-bot-row1-item1-img">
+                                <span><img src="./picture/avatar 1324.png" alt=""></span>
+                                <span>Benjamin Crawford</span>
+                                <span style="font-size: 10px; color: rgba(0, 0, 0, 0.5);">1:12 PM</span>
+                            </div>
+                            <div class="right-bot-row1-item1-cmtIcon">
+                                <div class="right-bot-row1-item1-cmtIconSub">
+                                    <p>
+                                        <img src="./picture/cuoi.png" alt="">
+                                        <img src="./picture/cuoi.png" alt="">
+                                        <img src="./picture/cuoi.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-bot-container">
+                            <div class="right-bot-row1-item1-img">
+                                <span><img src="./picture/avatar 1324.png" alt=""></span>
+                                <span>Christian Scott</span>
+                                <span style="font-size: 10px; color: rgba(0, 0, 0, 0.5);">1:12 PM</span>
+                            </div>
+                            <div class="right-bot-row1-item1-btnSend">
+                                <div class="right-bot-row1-item1-input">
+                                    <div class="btn">
+                                        <div class="btnAdd">Add</div>
+                                        <div class="btnInput"> Typing...</div>
+                                    </div>
+                                    <div class="btnIcon"> &#128513;</div>     
+                                </div>
+                                <div class="right-bot-row1-item1-btn"><img src="./picture/send.png" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
