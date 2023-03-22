@@ -59,6 +59,9 @@
             flex-direction: column;
             width: 910px;
             background-color: bisque;
+            /* justify-content: center;
+            align-items: center; */
+            align-items: center;
         }
         
         .center-row1 {
@@ -66,6 +69,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            width: 90%;
         }
         
         .center-row1-item1 {
@@ -82,6 +86,7 @@
             text-align: center;
             border-radius: 30px;
             color: red;
+            font-size: 15px;
         }
         
         .center-row1-item2 p {
@@ -102,6 +107,154 @@
             height: 20px;
             border-radius: 100px;
         }
+
+        .center-row2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: 91%;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .center-row2 img{
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
+
+        .center-row2-item1{
+            position: relative;
+            width: 100px;
+            height: 30px;
+            background-color: #e34d73;
+            border-radius: 40px;
+            margin-right: 15px;
+            color: aliceblue;
+            /* padding: auto;
+            margin: auto; */
+        }
+
+        .center-row2-item1 p{
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+
+        .banner{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            position: relative;
+        }
+
+        .banner-container{
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .banner-text1{
+            margin-left: 18px;
+            margin-top: 18px;
+            display: flex;
+            width: 160px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 18px;
+        }
+
+        .banner-text1 span{
+            padding: auto;
+            margin: auto;
+        }
+
+        .banner-text2{
+            display: flex;
+            width: 40%;
+            justify-content: end;
+            margin-right: 18px;
+            margin-top: 18px;
+        }
+
+        .content{
+            margin-top: 20px;
+            display: flex;
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .content-item1{
+            display: flex;
+            position: relative;
+        }
+
+        .content-item1 > img{
+            width: 260px;
+            height: 160px;
+        }
+
+        .content-container{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            position: absolute;
+            justify-content: space-between;
+        }
+
+        .content-desc{
+            display: flex;
+            width: 108px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 15px;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .content-desc span{
+            padding: 0;
+            margin: auto;
+        }
+
+        .content-container img{
+            width: 30px;
+            height: 30px;
+        }   
+
+        .content-img{
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .content-foot{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .content-foot-btnEnd{
+            width: 130px;
+            height: 45px;
+            background-color: #f22128;
+            color: aliceblue;
+            border-radius: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .content-foot-btnEnd p{
+            padding-top: 10px;
+            margin: 0;
+        }
+
     </style>
 </head>
 
@@ -132,52 +285,78 @@
                     </div>
                 </div>
 
-                <div class="center-row1">
-                    <div>
-                        <p class="img-user"><img src="./picture/user.png" alt=""> Internal </p>
+                <div class="center-row2">
+                    <div class="center-row2-item1">
+                        <p style="padding-bottom: 10px;" class=""><img src="./picture/user.png" alt=""> Internal </p>
                     </div>
 
                     <div>
-                        <p><img src="./picture/calender.png" alt=""> Sep 02, 2022</p>
+                        <p><img  src="./picture/calender.png" alt=""> Sep 02, 2022</p>
                     </div>
 
                     <div>
-                        <span>|</span>
-                        <span>08:00-09:00 Am</span>
+                        <span style="margin: 0px 15px;">| </span>
+                        <span>  08:00-09:00 Am</span>
                     </div>
 
                 </div>
 
 
-                <div>
-                    <div><img style="height: 300px; width: 500px;" src="./picture/img_big.png" alt="">
-                        <div>
-                            <div>
-                                <p>&#8226; Benjamin Crawford</p>
+                <div class="banner">
+                   <img src="./picture/img_big.png" alt="">
+                        <div class="banner-container" >
+                            <div class="banner-text1">
+                                <span style="color: #1dd75b;">&#8226;</span>
+                                <span> Benjamin Crawford</span>
                             </div>
-                            <div><img src="./picture/mic_color.png" alt=""></div>
+                             <div class="banner-text2"><img src="./picture/mic_color.png" alt=""></div>
+                        </div>
+                </div>
+
+
+                <div class="content">
+                    <div class="content-item1"><img src="./picture/img2.png" alt="">
+                        <div class="content-container">
+                            <div class="content-desc">
+                                <span style="color: #1dd75b;">&#8226;</span>
+                                <span>Christian Scott</span>
+                            </div>
+                            <div class="content-img"><img src="./picture/mic_grey_color.png" alt=""></div>
                         </div>
                     </div>
 
+                    <div class="content-item1"><img src="./picture/img1.png" alt="">
+                        <div class="content-container">
+                            <div class="content-desc">
+                                <span style="color: #1dd75b;">&#8226;</span>
+                                <span>Christian Scott</span>
+                            </div>
+                            <div class="content-img"><img src="./picture/mic_grey_color.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="content-item1"><img src="./picture/img.png" alt="">
+                        <div class="content-container">
+                            <div class="content-desc">
+                                <span style="color: #1dd75b;">&#8226;</span>
+                                <span>Christian Scott</span>
+                            </div>
+                            <div class="content-img"><img src="./picture/mic_grey_color.png" alt=""></div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <div>
-                    <div><img src="./picture/img2.png" alt=""></div>
-                    <div><img src="./picture/img1.png" alt=""></div>
-                    <div><img src="./picture/img.png" alt=""></div>
-                </div>
-
-                <div>
+                <div class="content-foot">
                     <div><img src="./picture/mic_grey_color.png" alt=""></div>
                     <div><img src="./picture/cam_color.png" alt=""></div>
                     <div><img src="./picture/speaker_grey_color.png" alt=""></div>
-                    <div>
+                    <div class="content-foot-btnEnd">
                         <p>End meeting</p>
                     </div>
                     <div><img src="./picture/Button 2179.png" alt=""></div>
                     <div><img src="./picture/share.png" alt=""></div>
                 </div>
+
             </div>
 
             <div id="right">right</div>
